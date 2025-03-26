@@ -3,4 +3,9 @@ fastapi==0.115.12
 loguru==0.7.3
 pydantic_settings==2.8.1
 langchain_openai==0.3.10
-langgraph
+langgraph==0.3.20
+langchain_community==0.3.20
+langchain_openai==0.3.10
+faiss-cpu==1.10.0
+nltk==3.9.1
+uvicorn==0.34.0

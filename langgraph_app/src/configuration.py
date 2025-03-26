@@ -4,7 +4,7 @@ from dataclasses import dataclass, fields
 from typing import Optional
 
 from langchain_core.runnables import RunnableConfig
-
+from langchain_community.vectorstores import FAISS
 
 @dataclass(kw_only=True)
 class Configuration:
@@ -12,6 +12,9 @@ class Configuration:
     temperature: Optional[float] = None
     api_key: str
     proxy: str
+    model_name_gpt: str
+    model_name_embedding: str
+    vectorstore: 'FAISS'
 
     @classmethod
     def from_runnable_config(
